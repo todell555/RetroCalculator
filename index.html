@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <!-- 
+made with guidance from https://www.codeproject.com/Tips/631525/Creating-Calculator-using-HTML-CSS-and-JavaScript
+
+The image is of a calculator that belonged to my father Richard Odell, who worked for Rockwell International, for over 50 years. Cheers daddy-O!
+-->
+
+<div class="calculatorbody"><img src="https://res.cloudinary.com/todell555/image/upload/c_scale,w_400/v1505255239/calculator_sm_shadow_b2tdze.png"></div>
+<div class="box">
+  <div class="display">
+    <input id="d" type="text" readonly size="24"></div>
+  <div class="keys">
+    <p>
+      <input class="button" type="button" value="C" onclick='c("")'>
+      <input class="button" type="button" value="m-" onclick='c("...oops...")'>
+      <input class="button" type="button" value="" onclick='c("...oops...")'>
+      <input class="button" type="button" value="=" onclick='e()'>
+    </p>
+    <p>
+      <input class="button" type="button" value="7" onclick='v("7")'>
+      <input class="button" type="button" value="8" onclick='v("8")'>
+      <input class="button" type="button" value="9" onclick='v("9")'>
+      <input class="button" type="button" value="/" onclick='v("/")'>
+    </p>
+    <p>
+      <input class="button" type="button" value="4" onclick='v("4")'>
+      <input class="button" type="button" value="5" onclick='v("5")'>
+      <input class="button" type="button" value="6" onclick='v("6")'>
+      <input class="button" type="button" value="*" onclick='v("*")'>
+    </p>
+    <p>
+      <input class="button" type="button" value="1" onclick='v("1")'>
+      <input class="button" type="button" value="2" onclick='v("2")'>
+      <input class="button" type="button" value="3" onclick='v("3")'>
+      <input class="button" type="button" value="-" onclick='v("-")'>
+    </p>
+    <p>
+      <input type="button" class="button" value="0" onclick='v("0")'>
+      <input type="button" class="button" value="." onclick='v(".")'>
+      <input type="button" class="button" value="_" onclick='c("...oops...")'>
+      <input type="button" class="button" value="+" onclick='v("+")'></p>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
